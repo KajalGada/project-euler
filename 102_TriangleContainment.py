@@ -4,6 +4,9 @@
 #Problem 102: Triangle containment
 
 from math import acos, sqrt, degrees
+import time
+
+start_time = time.time()
 
 file_handle = open('p102_triangles.txt', 'r')
 tot = 0
@@ -37,3 +40,6 @@ for i in range(1000):
 
 print tot
 file_handle.close()
+
+time_run = time.time() - start_time
+print  'Time to run (in sec): ' ,time_run
